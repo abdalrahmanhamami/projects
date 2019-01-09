@@ -15,6 +15,7 @@ locationRouter.route('/')
      })
     .post((req, res, next)=>{
     res.end('Location will be added: ' + req.body.name);
+    console.log(req.body)
     })
      .put((req, res, next)=>{
     res.statusCode = 403;
